@@ -1,0 +1,267 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Base styles */
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+body{
+    background-color:#8CADA7 ;
+    font-family: 'Poppins', sans-serif;
+    min-height: 3500px;
+    padding-top: 60px;
+    min-width: fit-content;
+
+}
+
+/* Normal Styles */
+
+.header{
+    background-color: #1C1C1C;
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    opacity: 92%;
+}
+
+.footer{
+    min-width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-transform: capitalize;
+}
+
+
+
+.logo{
+    color: white;
+    opacity: 90%;
+}
+
+
+.nav__list{
+    display: flex;
+    column-gap: 100px;
+    padding-top: 15px;
+}
+
+
+.nav__link{
+    color: #8CADA7;
+    opacity: 100%;
+    font-size: 15px;
+    transition: all 0.4s;
+    position: relative;
+}
+
+.nav__link:hover,
+.nav__link:focus{
+    color: white;
+    font-weight: 400;
+    opacity: 100%;
+    row-gap: 90px;
+    transition: all 0.4s;
+
+}
+
+.nav__link::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color:#FAFAFF;
+    display: block;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: all 0.3s;
+    opacity: 0;
+    pointer-events: none;
+    row-gap: 90px;
+}
+
+.nav__link:hover::after{
+    opacity: 1;
+    
+}
+
+/* Media Queries */
+
+@media (max-width:650px) {
+    .header__content{
+        flex-direction: column;
+        padding: 25px 0;
+        row-gap: 18px;
+    }
+    .nav__list{
+        column-gap: 40px;
+        padding-right: 30px;
+    }
+    .logo a{
+        font-size: 35px;
+        opacity: 80%;
+    }
+
+    .recent{
+        margin-top: 50px;
+        align-items: center;
+    }
+
+
+}
+
+
+/* Recent ARTWORKS */
+
+.recent{
+	color: #ffffff;
+	text-align: center;
+	padding-top: 70px;
+	height: 1020px;
+}
+
+.recent-arts{
+	opacity: 60%;
+	padding-top: 10px;
+}
+
+ /* -------------- */
+
+.carousel-inner{
+	width: 500px;
+	height: 90%;
+	align-items: center;
+}
+
+.carousel slide{
+	transition: 0.1s;
+}
+.carousel-text{
+	background-color:#1C1C1C;
+	padding-top: 10px;
+	padding-bottom: 2px;
+}
+
+.carousel-indicators{
+	align-items: center;
+	top: 780px;
+	height: 10px;
+}
+
+
+
+/* ABOUT THE ARTIST */
+
+.about{
+	color: #fff;
+	text-align: center;
+	height: 1020px;
+	padding-top: 120px;
+	
+}
+.about-the{
+	opacity: 65%;
+}
+
+/* -------------- */
+
+
+
+/* Nothing but ARTS */
+
+.arts{
+	text-align: center;
+	color: #fff;
+	padding-top: 30px;
+	opacity: 65%;
+}
+
+/* Cards */
+
+.card-body{
+	background-color: #050505;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	opacity: 80%;
+    width: 100%;
+	
+}
+
+.card-title{
+	text-align: center;
+	font-size: 1.2rem;
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.3rem;
+	font-weight: 500;
+	opacity: 80%;
+	
+	
+}
+
+.card{
+	background: none;
+	background-blend-mode:hue;
+	border: #003844;
+	border-spacing: 4px;
+	padding-bottom: 10px;
+	padding-top: 50px;
+}
+
+.card-img-top{
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .2s ease;
+	backface-visibility: hidden;
+}
+
+
+
+
+/* Footer Here */
+
+.footer{
+	background-color: #000000;
+	margin-top: 10px;
+	height: 40px;
+	color: #fff;
+	opacity: 60%;
+}
+
+.copyright-text{
+	font-size: 0.80rem;
+	text-align:left;
+	padding-top: 10px;
+    padding-left: 50px ;
+}
+
+.yupow{
+	color: #fff;
+	font-style: none;
+	text-decoration-style: none;
+	text-decoration:none
+}
+    
