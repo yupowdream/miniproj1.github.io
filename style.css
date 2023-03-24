@@ -359,15 +359,30 @@ body{
 
 
 
+/* COntact me here */
+
+.contact-me{
+    background-color: #1c1c1ca6;
+    color: #FAFAFF;
+    margin-top: 300px;
+    height: 300px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+.row{
+    padding-top: 10px;
+}
 
 /* Footer Here */
 
 .footer{
-	background-color: #000000;
-	margin-top: 815px;
+	background-color: #1c1c1ca6;
+	margin-top: 0px;
 	height: 40px;
 	color: #fff;
-	opacity: 60%;
+	opacity: 100%;
 }  
 
 .copyright-text{

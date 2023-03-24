@@ -1,0 +1,393 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Base styles */
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+body{
+    background-color:#8CADA7 ;
+    font-family: 'Poppins', sans-serif;
+    min-height: 1500px;
+    padding-top: 60px;
+    min-width: fit-content;
+
+}
+
+/* Normal Styles */
+
+.header{
+    background-color: #1c1c1cd8;
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    opacity: 100%;
+}
+
+.footer{
+    min-width: 100%;
+    bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-transform: capitalize;
+}
+
+
+
+.logo{
+    color: white;
+    opacity: 95%;
+}
+
+
+.nav__list{
+    display: flex;
+    column-gap: 100px;
+    padding-top: 15px;
+}
+
+
+.nav__link{
+    color: #8CADA7;
+    opacity: 100%;
+    font-size: 15px;
+    transition: all 0.4s;
+    position: relative;
+}
+
+.nav__link:hover,
+.nav__link:focus{
+    color: white;
+    font-weight: 400;
+    opacity: 100%;
+    row-gap: 90px;
+    transition: all 0.4s;
+
+}
+
+.nav__link::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color:#FAFAFF;
+    display: block;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: all 0.3s;
+    opacity: 0;
+    pointer-events: none;
+    row-gap: 90px;
+}
+
+.nav__link:hover::after{
+    opacity: 1;
+    
+}
+
+/* Media Queries */
+
+@media (max-width:786px) {
+    .header__content{
+        flex-direction: column;
+        padding: 25px 0;
+        row-gap: 18px;
+    }
+    .nav__list{
+        column-gap: 30px;
+        padding-right: 30px;
+    }
+    .logo a{
+        font-size: 35px;
+        opacity: 80%;
+    }
+
+    .digi-arts{
+        margin-top: 80px;
+        align-items: center;
+    }
+
+    .copyright-text{
+        text-align: center;
+        justify-content: center;
+        padding-right: 20px;
+    }
+    .responsive {
+        width: 50%;
+        margin: 6px 0;
+      }
+}
+
+/* DIGI_ARTS */
+.digi-arts{
+    color: #ffffff;
+	text-align: center;
+	padding-top: 100px;
+	height: 700x;
+}
+
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+  /* MEDIA QUERY */
+  
+  @media only screen and (max-width: 1200px) {
+    .responsive {
+      width: 49.999%;
+      margin: 6px 0;
+    }
+
+    .footer{
+        margin-top: 2000px;
+    }
+  }
+    
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+    .header__content{
+        flex-direction: column;
+        padding: 25px 0;
+        row-gap: 18px;
+    }
+    .nav__list{
+        column-gap: 30px;
+        padding-right: 30px;
+    }
+    .logo a{
+        font-size: 35px;
+        opacity: 80%;
+    }
+    .about{
+        padding-top: 150px;
+    }
+  }
+  
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .btn1{
+    font-size: 29px;
+  }
+
+
+/* ABOUT THE ARTIST */
+
+.artist{
+
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.about{
+	color: #fff;
+	text-align: center;
+    align-items: center;
+    height: 1300px;
+    padding-top: 250px;
+	
+}
+.about-the{
+	opacity: 65%;
+
+}
+.card2{
+    padding-top: 80px;
+    width: 800px;
+}
+
+.card-body2{
+    padding-top: 15px;
+}
+
+.accordion-item1,
+.accordion-item2
+.accordion-body{
+    width: 540px;
+    height:fit-content
+}
+
+.accordion-item1{
+    background-color: #1c1c1cd8;
+    border-color:#fff;
+    color: #FAFAFF;
+    border-style:groove;
+    border-right: none;
+    border-left: none;
+}
+
+.accordion-item2{
+    background-color: #1c1c1cd8;
+    border-color:#fff;
+    color: #FAFAFF;
+    
+}
+
+.aboutme_1{
+    text-align: center;
+    padding-left: 100px;
+    font-weight: 500;
+}
+
+.aboutme_1:focus{
+    color: #FAFAFF;
+}
+.accordion-button{
+    color: #1c1c1cd8;
+    
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color:none;
+    outline: 0!important;
+    /* I changed the color on this line */
+    /* If you do not want any color, just delete */
+    box-shadow: none;
+ }
+
+
+
+/* content */
+
+.card-body2b{
+    width:fit-content;
+    opacity: 100%;
+}
+
+.card-title2{
+    font-size: 17px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-text2{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-text3{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-text4,
+.card-text5,
+.card-text6{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* -------------- */
+
+
+
+
+
+/* COntact me here */
+
+.contact-me{
+    background-color: #1c1c1ca6;
+    color: #FAFAFF;
+    margin-top: 250px;
+    height: 300px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+.row{
+    padding-top: 10px;
+}
+
+/* Footer Here */
+
+.footer{
+	background-color: #1c1c1ca6;
+	margin-top: 0px;
+	height: 40px;
+	color: #fff;
+	opacity: 100%;
+}  
+
+
+.copyright-text{
+	font-size: 0.80rem;
+	text-align:center;
+	padding-top: 10px;
+    padding-left: 50px ;
+}
+
+.yupow{
+	color: #fff;
+	font-style: none;
+	text-decoration-style: none;
+	text-decoration:none
+}
+    
